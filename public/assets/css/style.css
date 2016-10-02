@@ -34,10 +34,10 @@ body {
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
     background-color: transparent;
-    color: #306E79;
+    color: #3ba5cc;
 }
 .navbar-default .navbar-nav > li.active > a {
-	border-top: 5px solid #306E79;
+	border-top: 5px solid #3ba5cc;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -92,7 +92,7 @@ body {
 
 }
 .homebox h2 {
-	color: #306e79;
+	color: #3ba5cc;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -185,18 +185,18 @@ body {
 }
 
 .footer {
-    background: #2F6D78;
-    color: #c0c0c0;
+    background: #2797c9;
+    color: white;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 .footer h3 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
 }
 .footer a {
-    color: #c0c0c0;
+    color: white;
 }
 .footer ul {
     padding: 0;
@@ -215,11 +215,12 @@ body {
     
 }
 .footerCopyright {
-    background: #2F6D78;
-    border-top: 1px solid #4b8994;
-    color: #c0c0c0;
+    background: #2797c9;
+    color: white;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
+    font-size: 13px;
 }
 
 .center {
@@ -231,7 +232,6 @@ body {
 }
 
 .main {
-    border-top: 2px solid #306e79;
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -263,7 +263,7 @@ body {
 
 }
 .grid-text h3 a {
-    color: #306e79;
+    color: #3ba5cc;
     font-size: 16px;
     font-weight: bold;
 }
@@ -278,9 +278,10 @@ body {
 
 }
 .detailTitle h1 {
-    color: #306e79;
+    color: #3ba5cc;
     font-size: 18px;
     font-weight: bold;
+    margin: 0 0 20px 0;
 }
 .detailContent {
 
@@ -292,6 +293,9 @@ body {
 .detailContent table,
 .detailContent iframe {
     max-width: 100% !important;
+}
+.detailImage {
+    margin-bottom: 20px;
 }
 .detailImage img {
     width: 100%;
@@ -333,12 +337,11 @@ body {
 }
 .contact h2,
 .about h2 {
-    color: #306e79;
+    color: #3ba5cc;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 20px;
-    text-align: center;
     text-transform: uppercase;
 }
 .contact h3,
@@ -351,13 +354,14 @@ body {
     text-transform: uppercase;
 }
 .contact-input {
-    background: #999999 none repeat scroll 0 0;
-    border: medium none;
+    background: white;
+    border: 1px solid #ccc;
     border-radius: 5px;
     color: #fff;
-    margin-bottom: 9px;
+    margin-bottom: 15px;
     padding: 10px;
     resize: none;
+    width: 100%;
 }
 .contact-submit {
     background: #ff6666 none repeat scroll 0 0;
@@ -384,7 +388,7 @@ body {
 }
 .about1 > strong,
 .about3 > strong {
-    color: #306E79;
+    color: #3ba5cc;
     text-transform: uppercase;
     font-size: 16px;
     display: block;
@@ -408,7 +412,7 @@ body {
     padding-bottom: 15px;
 }
 .about2 table tr td.about2-1 {
-    color: #306E79;
+    color: #3ba5cc;
     width: 50px;
     vertical-align: top;
     font-weight: bold;
@@ -434,7 +438,7 @@ body {
 }
 .newsbox h3 a:hover,
 .newsbox h3 a:focus {
-    color: #306e79;
+    color: #3ba5cc;
 }
 
 .langbox {
@@ -445,37 +449,99 @@ body {
     background: transparent none repeat scroll 0 0 !important;
 }
 
-@media (min-width: 670px) {
-    .grid-item {
-        padding-left: 30px;
-        padding-right: 30px;
-        height: 480px;
-    }
+#main {
+    padding: 40px 0;
 }
 
-@media (min-width: 670px) and (max-width: 1024px) {
-    .grid-item {
-        height: 420px;
-    }
+.datepicker table tr td.today, .datepicker table tr td.today:hover,
+.datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.day:hover, .datepicker table tr td.day.focused,
+.datepicker table tr td.today:hover, .datepicker table tr td.today:hover:hover {
+    background: #3ba5cc;
+    color: white;
 }
-@media (max-width: 669px) {
-    .navbar-nav {
-        margin: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-        border: none;
-    }
-    .navbar-nav > li {
-        margin-right: 0;
-    }
-    .navbar-nav > li > a {
-        line-height: normal;
-        border-top: none;
-    }
-    .bottom-right {
-        text-align: center;
-        margin-top: 10px;
-    }
+
+.datepicker-inline {
+    width: 100%;
+}
+
+.datepicker table {
+    width: 100%;
+}
+
+.block-title {
+    text-transform: uppercase;
+    color: #3ba5cc;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #3ba5cc;
+}
+
+#team .thumbnail {
+    width: 30%;
+    margin: 14px;
+    float: left;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#team .thumbnail img {
+    width: 261px;
+    height: 261px;
+}
+
+#team .thumbnail h3 {
+    margin-top: 0;
+}
+
+#team .thumbnail p {
+    margin-bottom: 0;
+}
+
+#home-news .item {
+    padding: 10px 15px;
+}
+
+#home-news .media-object {
+    width: 100px;
+    height: 60px;
+}
+
+#home-news a:hover {
+    text-decoration: none;
+}
+
+.slick-arrow {
+    width: 20px;
+    height: 39px;
+    top: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    outline: none;
+    background: #f9f9f9;
+    border: 1px solid #b7b7b7;
+    border-radius: 40px;
+    color: #c1c1c1;
+}
+
+.slick-prev.slick-arrow {
+    left: -20px;
+}
+
+.slick-next.slick-arrow {
+    right: -20px;
+}
+
+.grid-wr .media {
+    margin-bottom: 30px;
+}
+
+.grid-wr .media-object {
+    width: 400px;
+    height: 220px;
+}
+
+.grid-text h4 {
+    margin-top: 0;
 }
