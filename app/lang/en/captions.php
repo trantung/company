@@ -39,5 +39,7 @@ return array(
 	'partners' => 'Partners',
 
 	'seemore' => 'See more',
+    'leader' => 'Leader',
+    'newscailan' => 'News Cai Lan'
 
 );

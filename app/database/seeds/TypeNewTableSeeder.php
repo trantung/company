@@ -5,7 +5,7 @@ class TypeNewTableSeeder extends Seeder {
 	public function run()
 	{
 		TypeNew::create([
-			'name'=> 'Giói thiệu',
+			'name'=> 'Giới thiệu',
 			'slug'=> 'gioi-thieu'
 		]);
 		TypeNew::create([

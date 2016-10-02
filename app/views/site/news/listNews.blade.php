@@ -5,39 +5,28 @@
 @stop
 
 @section('content')
-
-<div class="main">
-	<div class="container">
-		<div class="grid">
-			{{-- <div class="title_center">
-				<h1> --}}
-					{{-- {{ $typeName }} --}}
-				{{-- </h1>
-			</div> --}}
-			<div class="row">
-				@foreach($data as $value)
-					<div class="col-sm-4 grid-item">
-						<div class="grid-image">
-							<a href="{{ action('SiteTypeController@showChildSlug', [$slug, $value->slug]) }}">
-								<img src="{{ url(UPLOADIMG . '/news'.'/'. Common::getIdVi($value->id, 'AdminNew') . '/' . $value->image_url) }}" />
-							</a>
-						</div>
-						<div class="grid-text">
-							<h3>
-								<a href="{{ action('SiteTypeController@showChildSlug', [$slug, $value->slug]) }}">
-									{{ $value->name }}
-								</a>
-							</h3>
-							<p>{{ limit_text(strip_tags($value->description), TEXTLENGH_DESCRIPTION) }}</p>
-						</div>
-						<div class="grid-seemore">
-							<a href="{{ action('SiteTypeController@showChildSlug', [$slug, $value->slug]) }}">{{ trans('captions.seemore') }}</a>
-						</div>
-					</div>
-				@endforeach
+<div class="grid-wr">
+	@foreach($data as $value)
+		<div class="media">
+			<div class="media-left">
+				<a href="{{ action('SiteTypeController@showChildSlug', [$slug, $value->slug]) }}">
+					<img class="media-object" src="{{ url(UPLOADIMG . '/news'.'/'. Common::getIdVi($value->id, 'AdminNew') . '/' . $value->image_url) }}" />
+				</a>
+			</div>
+			<div class="media-body">
+				<div class="grid-text">
+					<h4>
+						<a href="{{ action('SiteTypeController@showChildSlug', [$slug, $value->slug]) }}">
+							{{ $value->name }}
+						</a>
+					</h4>
+					<p>{{ limit_text(strip_tags($value->description), TEXTLENGH_DESCRIPTION) }}</p>
+				</div>
+				<div class="grid-seemore">
+					<a href="{{ action('SiteTypeController@showChildSlug', [$slug, $value->slug]) }}">{{ trans('captions.seemore') }}</a>
+				</div>
 			</div>
 		</div>
-	</div>
+	@endforeach
 </div>
-
 @stop

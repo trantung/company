@@ -22,6 +22,7 @@ return array(
 	'howtofind' => 'How to find',
 	'contactform' => 'Liên hệ với chúng tôi',
 	'contactus' => 'Liên hệ với chúng tôi',
+    'contactfooter' => 'Vui lòng liên hệ với chúng tôi theo thông tin bên dưới',
 
 	'name' => 'Tên',
 	'email' => 'Email',
@@ -40,5 +41,6 @@ return array(
 	'partners' => 'Đối tác',
 
 	'seemore' => 'Xem thêm',
-
+    'leader' => 'Ban lãnh đạo',
+    'newscailan' => 'Tin tức cảng Cái Lân'
 );

@@ -2,5 +2,7 @@
 <script type="text/javascript">
 var defaultLat = (document.getElementById('latitude').value!=0) ? document.getElementById('latitude').value : 21.00296184;
 var defaultLng = (document.getElementById('longitude').value!=0) ? document.getElementById('longitude').value : 105.85202157;
+    console.log(defaultLat);
+    console.log(defaultLng);
 </script>
 <script type="text/javascript" src="{{ asset('assets/js/gmap.js') }}"></script>

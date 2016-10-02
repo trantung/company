@@ -14,6 +14,7 @@
 			<li><a href="{{ action('AdminContactController@feedback') }}"><i class="fa fa-newspaper-o"></i> <span>Feedback</span></a></li>
 			<li><a href="{{ action('AdminSlideController@index') }}"><i class="fa fa-newspaper-o"></i> <span>Slide</span></a></li>
 			<li><a href="{{ action('BottomTextController@index') }}"><i class="fa fa-newspaper-o"></i> <span>Text bottom</span></a></li>
+			<li><a href="{{ action('AdminTeamController@index') }}"><i class="fa fa-user"></i> <span>Ban lãnh đạo</span></a></li>
 			@if(Admin::isAdmin())
 			<li>
 				<a href="{{ action('ManagerController@index') }}">

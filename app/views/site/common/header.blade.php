@@ -9,12 +9,18 @@
     {{ HTML::style('assets/css/bootstrap.min.css') }}
     {{ HTML::style('assets/css/font-awesome.min.css') }}
     {{ HTML::style('assets/css/swiper.min.css') }}
+    {{ HTML::style('assets/css/bootstrap-datepicker.css') }}
+    {{ HTML::style('assets/css/slick.css') }}
     {{ HTML::style('assets/css/style.css') }}
+    {{ HTML::style('assets/css/responsive.css') }}
 
     {{ HTML::script('assets/js/jquery.js') }}
     {{ HTML::script('assets/js/jquery-ui.min.js') }}
     {{ HTML::script('assets/js/bootstrap.min.js') }}
     {{ HTML::script('assets/js/swiper.min.js') }}
+    {{ HTML::script('assets/js/slick.min.js') }}
+    {{ HTML::script('assets/js/bootstrap-datepicker.min.js') }}
+    {{ HTML::script('assets/js/bootstrap-datepicker.vi.min.js') }}
     {{ HTML::script('assets/js/script.js') }}
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
